@@ -1,0 +1,8 @@
+<mat-radio-group class="group" aria-label="Select an option" [formControl]="control">
+  <ng-container *ngFor="let option of options;">
+    <mat-radio-button class="button" [checked]="option.checked" [value]="option.value">{{option.name}}</mat-radio-button>
+  </ng-container>
+  <mat-error class="error" *ngFor="let error of control.errors | errorKeys">
+    {{ messages[error] }}
+  </mat-error>
+</mat-radio-group>

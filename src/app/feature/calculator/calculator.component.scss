@@ -1,0 +1,20 @@
+:host {
+  background: #fafafa;
+
+  .title {
+    font-size: 34px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .form {
+      width: 266px;
+
+      .first-input {
+        margin-top: 30px;
+      }
+    }
+  }
+}
